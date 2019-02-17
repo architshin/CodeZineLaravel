@@ -38,3 +38,7 @@ Route::redirect("/google", "https://www.google.com/");
 Route::get("/helloBlade", function() {
 	return view("hello");
 });
+Route::get("/helloBladeWithData", function() {
+	$data["name"] = "武者小路";
+	return view("helloWithData", $data);
+});
