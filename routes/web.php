@@ -33,3 +33,8 @@ Route::get("/whoAreYouPart/{nameFirst}/{nameLast?}",
 	}
 );
 Route::redirect("/google", "https://www.google.com/");
+
+//第3回サンプル
+Route::get("/helloBlade", function() {
+	return view("hello");
+});
