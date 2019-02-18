@@ -63,3 +63,7 @@ Route::get("/chap3/loop", function() {
 	$data["resultList"] = ["A"=>"田中", "B"=>"中野", "C"=>"野村"];
 	return view("chap3.loopStatement", $data);
 });
+Route::get("/chap3/loopVariable", function() {
+	$data["resultList"] = ["A"=>"田中", "B"=>"中野", "C"=>"野村", "D"=>"村井", "E"=>"井田"];
+	return view("chap3.loopVariables", $data);
+});
