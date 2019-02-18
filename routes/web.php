@@ -42,3 +42,7 @@ Route::get("/helloBladeWithData", function() {
 	$data["name"] = "武者小路";
 	return view("helloWithData", $data);
 });
+Route::get("/chap3/helloToSomeone", function() {
+	$data["name"] = "中野";
+	return view("chap3.hello", $data);
+});
