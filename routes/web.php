@@ -54,3 +54,8 @@ Route::get("/chap3/switch", function() {
 	$data["rand"] = rand(1, 3);
 	return view("chap3.switchStatement", $data);
 });
+Route::get("/chap3/conditions", function() {
+	$data["isFinished"] = false;
+	$data["resultList"] = [];
+	return view("chap3.conditionStatement", $data);
+});
