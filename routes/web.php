@@ -59,3 +59,7 @@ Route::get("/chap3/conditions", function() {
 	$data["resultList"] = [];
 	return view("chap3.conditionStatement", $data);
 });
+Route::get("/chap3/loop", function() {
+	$data["resultList"] = ["A"=>"田中", "B"=>"中野", "C"=>"野村"];
+	return view("chap3.loopStatement", $data);
+});
