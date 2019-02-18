@@ -46,3 +46,7 @@ Route::get("/chap3/helloToSomeone", function() {
 	$data["name"] = "中野";
 	return view("chap3.hello", $data);
 });
+Route::get("/chap3/if", function() {
+	$data["rand"] = rand(1, 3);
+	return view("chap3.ifStatement", $data);
+});
