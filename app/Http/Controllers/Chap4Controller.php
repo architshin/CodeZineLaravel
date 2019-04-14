@@ -22,4 +22,10 @@ class Chap4Controller extends Controller
 		$data["name"] = $name;
 		return view("chap3.hello", $data);
 	}
+
+	public function whoAreYouFull($nameFirst, $nameLast)
+	{
+		$data["name"] = $nameFirst." ".$nameLast;
+		return view("chap3.hello", $data);
+	}
 }

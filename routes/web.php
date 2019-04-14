@@ -74,3 +74,4 @@ Route::get("/chap4/helloToSomeone", "Chap4\HelloToSomeoneController");
 Route::get("/chap4/helloMusha", "Chap4Controller@helloMusha");
 Route::get("/chap4/helloNakano", "Chap4Controller@helloNakano");
 Route::get("/chap4/whoAreYou/{name}", "Chap4Controller@whoAreYou");
+Route::get("/chap4/whoAreYouFull/{nameFirst}/{nameLast}", "Chap4Controller@whoAreYouFull");
