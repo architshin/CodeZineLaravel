@@ -67,3 +67,6 @@ Route::get("/chap3/loopVariable", function() {
 	$data["resultList"] = ["A"=>"田中", "B"=>"中野", "C"=>"野村", "D"=>"村井", "E"=>"井田"];
 	return view("chap3.loopVariables", $data);
 });
+
+//第4回サンプル
+Route::get("/chap4/helloBladeWithData", "HelloBladeWithDataController");
