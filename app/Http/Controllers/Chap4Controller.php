@@ -10,10 +10,16 @@ class Chap4Controller extends Controller
 		$data["name"] = "武者小路";
 		return view("helloWithData", $data);
 	}
-	
+
 	public function helloNakano()
 	{
 		$data["name"] = "中野";
+		return view("chap3.hello", $data);
+	}
+
+	public function whoAreYou($name)
+	{
+		$data["name"] = $name;
 		return view("chap3.hello", $data);
 	}
 }
