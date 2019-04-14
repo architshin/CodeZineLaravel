@@ -70,3 +70,4 @@ Route::get("/chap3/loopVariable", function() {
 
 //第4回サンプル
 Route::get("/chap4/helloBladeWithData", "HelloBladeWithDataController");
+Route::get("/chap4/helloToSomeone", "Chap4\HelloToSomeoneController");
