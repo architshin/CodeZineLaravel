@@ -60,6 +60,8 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        "recordidaddress" => \App\Http\Middleware\RecordIPAddress::class,
+        "recordidaddress2" => \App\Http\Middleware\RecordIPAddress2::class,
     ];
 
     /**
