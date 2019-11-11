@@ -75,3 +75,11 @@ Route::get("/chap4/helloMusha", "Chap4Controller@helloMusha");
 Route::get("/chap4/helloNakano", "Chap4Controller@helloNakano");
 Route::get("/chap4/whoAreYou/{name}", "Chap4Controller@whoAreYou");
 Route::get("/chap4/whoAreYouFull/{nameFirst}/{nameLast}", "Chap4Controller@whoAreYouFull");
+
+//第5回サンプル
+Route::get("/chap5/middlewareTest", function() {
+	return "<p>ミドルウェアのテスト。こちらはリクエスト処理。</p>";
+})->middleware("recordidaddress");
+Route::get("/chap5/middlewareTest2", function() {
+	return "<p>ミドルウェアのテスト。こちらはリクエスト処理。</p>";
+})->middleware("recordidaddress2:中");
