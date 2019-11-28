@@ -83,3 +83,9 @@ Route::get("/chap5/middlewareTest", function() {
 Route::get("/chap5/middlewareTest2", function() {
 	return "<p>ミドルウェアのテスト。こちらはリクエスト処理。</p>";
 })->middleware("recordidaddress2:中");
+
+//第6回サンプル
+Route::get("/chap6/newBook", "Chap6Controller@newBook");
+Route::get("/chap6/newBook2", "Chap6Controller@newBook2");
+Route::get("/chap6/newPen", "Chap6Controller@newPen");
+Route::get("/chap6/newNote", "Chap6Controller@newNote");
