@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Chap6\Book;
 use App\Chap6\Magazine;
+use App\Chap6\Note;
 
 class Chap6Controller extends Controller
 {
@@ -26,9 +27,8 @@ class Chap6Controller extends Controller
 	{
 		return "<p>newBook3()メソッドが実行されました。</p>";
 	}
-	public function newNote()
+	public function newNote(Note $note)
 	{
-		$book = resolve("App\Chap6\Note");
 		return "<p>newNote()メソッドが実行されました。</p>";
 	}
 }

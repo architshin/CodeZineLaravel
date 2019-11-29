@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -12,7 +11,7 @@ class NoteServiceProvider extends ServiceProvider
 		$this->app->bind("App\Chap6\Note", function($app) {
 			$name = "しんちゃん";
 			$note = new Note($name);
-			return $name;
+			return $note;
 		});
 	}
 }
