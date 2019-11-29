@@ -87,5 +87,5 @@ Route::get("/chap5/middlewareTest2", function() {
 //第6回サンプル
 Route::get("/chap6/newBook", "Chap6Controller@newBook");
 Route::get("/chap6/newBook2", "Chap6Controller@newBook2");
-Route::get("/chap6/newPen", "Chap6Controller@newPen");
+Route::get("/chap6/newBook3", "Chap6Controller@newBook3");
 Route::get("/chap6/newNote", "Chap6Controller@newNote");

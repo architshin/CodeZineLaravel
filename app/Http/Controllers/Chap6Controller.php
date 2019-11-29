@@ -3,7 +3,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Chap6\Book;
-use App\Chap6\Pen;
 use App\Chap6\Magazine;
 
 class Chap6Controller extends Controller
@@ -23,9 +22,9 @@ class Chap6Controller extends Controller
 		$book = resolve("App\Chap6\Book");
 		return "<p>newBook2()メソッドが実行されました。</p>";
 	}
-	public function newPen(Pen $pen)
+	public function newBook3(Book $book)
 	{
-		return "<p>newPen()メソッドが実行されました。</p>";
+		return "<p>newBook3()メソッドが実行されました。</p>";
 	}
 	public function newNote()
 	{
