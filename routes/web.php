@@ -89,3 +89,6 @@ Route::get("/chap6/newBook", "Chap6Controller@newBook");
 Route::get("/chap6/newBook2", "Chap6Controller@newBook2");
 Route::get("/chap6/newBook3", "Chap6Controller@newBook3");
 Route::get("/chap6/newNote", "Chap6Controller@newNote");
+
+//第7回サンプル
+Route::get("/chap7/occurDataAccessException", "Chap7Controller@occurDataAccessException");
