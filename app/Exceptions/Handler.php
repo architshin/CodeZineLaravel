@@ -34,6 +34,10 @@ class Handler extends ExceptionHandler
 	 */
 	public function report(Exception $exception)
 	{
+		if($exception instanceof FatalProcessException) {
+			$errorMsg = $exception->getMessage();
+			print("<h1>".$errorMsg."</h1>");
+		}
 		parent::report($exception);
 	}
 
