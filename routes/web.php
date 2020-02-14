@@ -93,3 +93,4 @@ Route::get("/chap6/newNote", "Chap6Controller@newNote");
 //第7回サンプル
 Route::get("/chap7/occurFatalProcessException", "Chap7Controller@occurFatalProcessException");
 Route::get("/chap7/occurDataAccessException", "Chap7Controller@occurDataAccessException");
+Route::get("/chap7/occurFileAccessException", "Chap7Controller@occurFileAccessException");
