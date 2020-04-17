@@ -79,10 +79,10 @@ Route::get("/chap4/whoAreYouFull/{nameFirst}/{nameLast}", "Chap4Controller@whoAr
 //第5回サンプル
 Route::get("/chap5/middlewareTest", function() {
 	return "<p>ミドルウェアのテスト。こちらはリクエスト処理。</p>";
-})->middleware("recordidaddress");
+})->middleware("recordipaddress");
 Route::get("/chap5/middlewareTest2", function() {
 	return "<p>ミドルウェアのテスト。こちらはリクエスト処理。</p>";
-})->middleware("recordidaddress2:中");
+})->middleware("recordipaddress2:中");
 
 //第6回サンプル
 Route::get("/chap6/newBook", "Chap6Controller@newBook");
