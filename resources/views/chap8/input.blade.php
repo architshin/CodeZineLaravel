@@ -6,7 +6,7 @@
 </head>
 	<body>
 		<h1>入力画面</h1>
-		@if ($errors->any())
+		@if($errors->any())
 		<section style="border: 1px red solid">
 			<ul style="color: red">
 			@foreach($errors->all() as $error)

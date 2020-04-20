@@ -13,7 +13,7 @@ class Chap8Controller extends Controller
 
 	public function addData(Request $request)
 	{
-		$validatedData = $request->validate([
+		$request->validate([
 			"name" => "required",
 			"height" => "required|numeric",
 			"weight" => "required|numeric",
