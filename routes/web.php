@@ -105,3 +105,7 @@ Route::get("/chap9/showOneDeptByRaw", "Chap9Controller@showOneDeptByRaw");
 Route::get("/chap9/showAllDeptsByBuilder", "Chap9Controller@showAllDeptsByBuilder");
 Route::get("/chap9/showAllDeptsByModel", "Chap9Controller@showAllDeptsByModel");
 Route::get("/chap9/insertDeptByModel", "Chap9Controller@insertDeptByModel");
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
