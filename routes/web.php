@@ -98,3 +98,10 @@ Route::get("/chap7/occurFileAccessException", "Chap7Controller@occurFileAccessEx
 //第8回サンプル
 Route::get("/chap8/showInput", "Chap8Controller@showInput");
 Route::post("/chap8/addData", "Chap8Controller@addData");
+
+//第9回サンプル
+Route::get("/chap9/getPDO", "Chap9Controller@getPDO");
+Route::get("/chap9/showOneDeptByRaw", "Chap9Controller@showOneDeptByRaw");
+Route::get("/chap9/showAllDeptsByBuilder", "Chap9Controller@showAllDeptsByBuilder");
+Route::get("/chap9/showAllDeptsByModel", "Chap9Controller@showAllDeptsByModel");
+Route::get("/chap9/insertDeptByModel", "Chap9Controller@insertDeptByModel");
