@@ -106,6 +106,9 @@ Route::get("/chap9/showAllDeptsByBuilder", "Chap9Controller@showAllDeptsByBuilde
 Route::get("/chap9/showAllDeptsByModel", "Chap9Controller@showAllDeptsByModel");
 Route::get("/chap9/insertDeptByModel", "Chap9Controller@insertDeptByModel");
 
+//第10回サンプル
+Route::get("/chap10/helloWithAuth", "Chap10Controller@helloWithAuth")->middleware("auth");
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
